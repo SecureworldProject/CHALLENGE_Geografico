@@ -5,8 +5,8 @@ import random
 #buscamos en google maps la longitud y la latitud de las sedes
 sedes = [[40.514476148773156, -3.674447499629994],
          [40.533657515908644, -3.6564230558242317],
-         #[40.4893175, -3.3418228]]
-         [40.4993175, -3.3418228]]
+         [40.4893175, -3.3418228]]
+         #[40.4993175, -3.3418228]]
 
 
 # Cálculo de la tesela
@@ -34,19 +34,17 @@ for i in X:
     solucion_parcial = np.poly1d([1,-i])
     lat=np.polymul(solucion_parcial, lat)
 
-
-print('solucion latitud')
-print(lat)
-
+    
 for i in Y:
     solucion_parcial = np.poly1d([1,-i])
 
     lon=np.polymul(solucion_parcial, lon)
 
-
-print('solucion longitud')
-print(lon)
-
+    
+num=np.poly1d([random.randint(0, 50)])
+lon=lon+num
+num=np.poly1d([random.randint(0, 50)])
+lat=lat+num
 np.savez('ecuaciones',lat,lon)
 
 #print('solucion')
