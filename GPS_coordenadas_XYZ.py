@@ -110,14 +110,7 @@ def executeChallenge():
     print(lat)
 
     #
-    tesela = 500
-    paralelo = 30.99233  # Un segundo en un paralelo son 30.99233 metros
-    meridiano = 30.7154  # Un segundo en un meridiano son 30.7154 metros
-
-    teselalon = tesela / paralelo / 3600
-    teselalat = tesela / meridiano / 3600
-
-    tesela = (teselalon + teselalat) / 2
+    tesela = 30
     #coordenadas lon y lat en teselas 
     lon=int(round(lon / tesela))
     lat=int(round(lat / tesela))
