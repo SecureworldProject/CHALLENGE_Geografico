@@ -9,15 +9,11 @@ sedes = [[40.514476148773156, -3.674447499629994],
          #[40.4993175, -3.3418228]]
 
 
-# Cálculo de la tesela
+# CÃ¡lculo de la tesela
 tesela = 500
-paralelo = 30.99233  # Un segundo en un paralelo son 30.99233 metros
-meridiano = 30.7154  # Un segundo en un meridiano son 30.7154 metros
+tesela = 30  
 
-teselalon = tesela / paralelo / 3600
-teselalat = tesela / meridiano / 3600
 
-tesela = (teselalon + teselalat) / 2
 X=[]
 Y=[]
 
