@@ -110,7 +110,7 @@ def executeChallenge():
     print(lat)
 
     #
-    tesela = 30/ 3600
+    tesela = 500/30/ 3600
     #coordenadas lon y lat en teselas 
     lon=int(round(lon / tesela))
     lat=int(round(lat / tesela))
