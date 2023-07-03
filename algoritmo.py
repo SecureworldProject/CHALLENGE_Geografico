@@ -11,7 +11,7 @@ sedes = [[40.514476148773156, -3.674447499629994],
 
 # Cálculo de la tesela
 tesela = 500
-tesela = 30  
+tesela = 30  / 3600
 
 
 X=[]
